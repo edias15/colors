@@ -8,15 +8,21 @@ var _vuetify = _interopRequireDefault(require("vuetify"));
 
 require("vuetify/dist/vuetify.min.css");
 
+require("@mdi/font/css/materialdesignicons.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 _vue["default"].use(_vuetify["default"]);
 
 _vue["default"].use(_inertiaVue.plugin);
 
-var el = document.getElementById('app');
+var el = document.getElementById("app");
 new _vue["default"]({
-  vuetify: new _vuetify["default"](),
+  vuetify: new _vuetify["default"]({
+    icons: {
+      iconfont: "mdiSvg"
+    }
+  }),
   render: function render(h) {
     return h(_inertiaVue.App, {
       props: {
