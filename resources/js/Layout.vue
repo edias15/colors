@@ -3,17 +3,16 @@
     <div>
       <inertia-link href="/">Home</inertia-link>
       <inertia-link href="/about">About</inertia-link>
+      <v-spacer />
     </div>
     <div>
-      <slot/>
+      <slot />
     </div>
   </div>
 </template>
 
 <script>
-  export default {}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>
